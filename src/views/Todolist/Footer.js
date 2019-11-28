@@ -29,4 +29,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Footer)
 
-我是master分支上增加的内容
+我是master分支上增加的内容，哈哈哈
