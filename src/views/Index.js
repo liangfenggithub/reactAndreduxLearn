@@ -31,6 +31,7 @@ class Index extends React.Component {
           <Switch>
             {
               routes.map((r, key) => {
+                console.log(r)
                 return <Route key={key} path={r.path} component={r.component} exact={r.exact ? true : false}></Route>
               })
             }

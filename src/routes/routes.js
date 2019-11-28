@@ -12,7 +12,6 @@ export default [
   },
   {
     path: "/index",
-    exact: true,
     component: Index,
   },
   {
@@ -31,7 +30,7 @@ export default [
     component: item,
   },
   {
-    ptah: "todolist",
+    path: "/todolist",
     exact: true,
     component: Todolist
   }
