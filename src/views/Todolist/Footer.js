@@ -28,3 +28,5 @@ const mapDispatchToProps = (dispatch) => {
   }, dispatch)
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Footer)
+
+我是dev分支上增加的内容
