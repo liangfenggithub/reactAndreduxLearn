@@ -28,3 +28,4 @@ const mapDispatchToProps = (dispatch) => {
   }, dispatch)
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Footer)
+提交测试，啦啦啦啦
