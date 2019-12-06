@@ -19,15 +19,15 @@ const siderMenu = [
   },
   {
     key: "4",
-    name: "多级菜单",
+    name: "Echart",
     icon: "pie-chart",
-    route: "/index/password",
+    route: "/index/Chart",
     subMenu: [
       {
         key: "5",
-        name: "test1",
+        name: "Echart图表",
         icon: "pie-chart",
-        route: "/index/password",
+        route: "/index/chart",
       },
       {
         key: "6",

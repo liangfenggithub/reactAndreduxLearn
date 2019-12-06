@@ -2,6 +2,7 @@ import Dashboard from "../views/Dashboard"
 import Password from "../views/Password"
 import UserInfo from "../views/UserInfo"
 import Jsonshow from "../views/Jsonshow"
+import Chart from "../views/Echart/index.js"
 
 export default [
   {
@@ -24,4 +25,10 @@ export default [
     exact: true,
     component: Jsonshow
   },
+  {
+
+    path: "/index/chart",
+    exact: true,
+    component: Chart,
+  }
 ]
