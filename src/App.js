@@ -1,13 +1,11 @@
 import React from 'react';
 import routes from "./routes/routes.js"
 import { Route, Switch } from "react-router-dom";
-
-
+import { Button } from "antd";
 class App extends React.Component {
   render() {
     return (
       <div>
-        {/* APP */}
         <Switch>
           {
             routes.map(v => {

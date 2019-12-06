@@ -1,5 +1,5 @@
 import Login from "../views/Login.js"
-import Index from "../views/Index.js"
+import Index from "../views/Index/Index.js"
 import Sagatest from "../views/Sagatest.js"
 import Counter from "../views/Counter"
 import item from "../views/Item.js"

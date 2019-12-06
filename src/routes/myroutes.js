@@ -1,6 +1,7 @@
 import Dashboard from "../views/Dashboard"
 import Password from "../views/Password"
 import UserInfo from "../views/UserInfo"
+import Jsonshow from "../views/Jsonshow"
 
 export default [
   {
@@ -17,5 +18,10 @@ export default [
     path: "/index/userinfo",
     exact: true,
     component: UserInfo
+  },
+  {
+    path: "/index/jsonshow",
+    exact: true,
+    component: Jsonshow
   },
 ]

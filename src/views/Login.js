@@ -1,4 +1,5 @@
 import React from "react"
+import { Button, message } from "antd"
 class Login extends React.Component {
   constructor(props) {
     super(props)
@@ -31,6 +32,8 @@ class Login extends React.Component {
         <div>点击进入 todo list 页面</div>
         <button onClick={() => this.props.history.push("todolist")}>点我 </button>
 
+        <div>antd 引入测试</div>
+        <Button type="primary" onClick={() => { message.success("button点击成功") }}> 测试按钮</Button>
       </div>
 
     )
