@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import Pie from "../../Component/Pie.js"
 import Line from "../../Component/Line.js"
+import Bar from "../../Component/Bar.js"
+import { Row, Col, Card } from "antd"
 class Chart extends Component {
   constructor(props) {
     super(props);
@@ -26,28 +28,48 @@ class Chart extends Component {
       ],
       lineData: [//折线图数据
 
-      ]
+      ],
+      barData: [],
     }
 
   }
   render() {
     return (
       <div>
-        <Pie
-          data={this.state.pieData}
-          height={"300px"}
-          width={"50%"}
-        >
-        </Pie>
 
+        <Row gutter={16}>
+          <Col span={8}>
+            <Card title="Card title" >
+              <Pie
+                data={this.state.pieData}
+                height={"300px"}
+                width={"100%"}
+              >
+              </Pie>
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card title="Card title" >
+              <Line
+                data={this.state.lineData}
+                height={"300px"}
+                width={"100%"}
+              >
+              </Line>
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card title="Card title" >
+              <Bar
+                data={this.state.barData}
+                height={"300px"}
+                width={"100%"}
+              >
+              </Bar>
+            </Card>
+          </Col>
+        </Row>
 
-        <Line
-          data={this.state.lineData}
-          height={"300px"}
-          width={"50%"}
-        >
-
-        </Line>
       </div >
     )
   }

@@ -9,6 +9,9 @@ import 'echarts/lib/component/tooltip'; //提示框组件
 import 'echarts/lib/component/title';
 import 'echarts/lib/component/visualMap';
 
+//自定义主题文件
+import jtzyTheme from "../config/echart_theme_back"
+
 export default class Pie extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +31,9 @@ export default class Pie extends Component {
     //可以使用id，但是有可能会重复
     // var myChart = echarts.init(document.getElementById('main'));
     //也可以使用react的ref，防止id重复
+    echarts.registerTheme('jtzy', jtzyTheme)//主题注册
     let myChart = echarts.init(this.chartDom);
+
     // 绘制图表
     myChart.setOption({
       tooltip: {
